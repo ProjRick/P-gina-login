@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url(wal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 9;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+    backdrop-filter : blur(0px);
+    padding: 10px 90px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: -40px;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
+
+
+
+
+.write {
+    color: white;
+    position: absolute;
+    font-size: 42px;
+    top: 40%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0.2em 0.2em 0.2em black;
+    animation: textAnimation 1.5s linear infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+      font-size: 42px;
+      text-shadow: 0.2em 0.2em 0.2em black;
+    }
+    50% {
+      font-size: 45px;
+      text-shadow: 0.3em 0.3em 0.3em black;
+    }
+    100% {
+      font-size: 42px;
+      text-shadow: 0.2em 0.2em 0.2em black;
+    }
+  }
+
+.sidebar{
+    right: 0;
+    top: 10;
+    background: transparent;
+    backdrop-filter: blur(30px);
+}
+
+.sidebar img {
+    width: 35px;
+    margin: 1px auto;
+    cursor: pointer;
+    
+}
+
+.sidebar {
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    padding-top: 37vh;
+}
+
+.animation:hover {
+    scale: 1.1;
+}

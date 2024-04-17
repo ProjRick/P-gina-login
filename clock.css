@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url(wal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 9;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+    backdrop-filter : blur(0px);
+    padding: 10px 90px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: -40px;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+
+}
+
+
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    width: 800px;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 80px;
+}
+
+.container div {
+    height: 220px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.container span{
+    font-weight: bolder;
+    font-size: 140px;
+}
+
+.container span.tempo{
+    font-size: 30px;
+    position: absolute;
+    top: 170px;
+}
+
+.position {
+    position: absolute;
+    left: 21%;
+    top: 9%;
+}
+
+.clock {
+    color: rgb(197, 197, 197);
+}
